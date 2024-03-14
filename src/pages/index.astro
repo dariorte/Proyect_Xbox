@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="container">
+		<div class="wrapper">
+			<div class="box img1">img1</div>
+			<div class="box img2">img2</div>
+			<div class="box img3">img3</div>
+			<div class="box img4">img4</div>
+			<div class="box img5">img5</div>
+			<div class="box img6">img6</div>
+			<div class="box img7">img7</div>
+			<div class="box img8">img8</div>
+			<div class="box img9">img9</div>
+			<div class="box img10">img10</div>
+		</div>
+	</div>
+
+</Layout>
+
+<style>
+
+	.wrapper{
+		display: grid;
+		grid-template-rows: 120px 120px 120px 120px; /*como necesito 4 columnas multiplico por 4 y le pongo el valor a los cuatro lados*/
+		grid-template-areas: 
+		"img1 img1 img2 img3 "
+		"img1 img1 img6 img6"
+		"img4 img5 img6 img6"
+		"img7 img8 img9 img10"/* Depende como este la cuadricula se hace la disribucción */
+		;
+	}
+	.box{
+		display: flex;
+		font-family: verdana;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		color: white;	
+	}
+
+	.img1{
+	grid-area: img1;
+	background: orange;
+	}
+	
+	.img2{
+		grid-area: img2;
+		background: rgb(128, 0, 0);
+	}
+
+	.img3{
+		grid-area: img3;
+		background: rgb(13, 0, 128);
+	}
+
+	.img4{
+		grid-area: img4;
+		background: rgb(231, 235, 5);
+	}
+
+	.img5{
+		grid-area: img5;
+		background: rgb(4, 248, 248);
+	}
+
+	.img6{
+		grid-area: img6;
+		background: rgb(109, 7, 243);
+	}
+
+	.img7{
+		grid-area: img7;
+		background: rgb(219, 95, 95);
+	}
+
+	.img8{
+		grid-area: img8;
+		background: rgb(95, 151, 224);
+	}
+
+	.img9{
+		grid-area: img9;
+		background: rgb(22, 65, 22);
+	}
+
+	.img10{
+		grid-area: img10;
+		background: rgb(151, 152, 161);
+	}
+</style>
