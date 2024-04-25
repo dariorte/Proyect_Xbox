@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Astro Starter Kit: Basics ; Se clona Xbox con Tailwind 
 
 ```sh
 npm create astro@latest -- --template basics
